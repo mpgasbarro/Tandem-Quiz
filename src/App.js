@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
+import Home from "./Components/Home/Home"
 import './App.css';
 
 class App extends Component {
@@ -10,8 +11,11 @@ class App extends Component {
 		};
 	}
 	render() {
-		console.log(this.state.questions);
-		return <div className='App'></div>;
+		return (
+		<div >
+      <Home />
+			</div>
+		);
 	}
 }
 
