@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Project - Who Wants to be a Tandem Quiz Millionaire? 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description ##
+My project is a multiple choice type of trivia game, where the user is given a question and four potential answers. For each question, there will be a set amount of time that the user will have, in order to answer. Throughout the game, the user will have 3 life lines, in which they can use, for additional help. At the end of the game, the user will have a final score based on number of questions they answered correctly, as well as the duration in which it took to complete the entire quiz. 
 
-## Available Scripts
+## Brief Example ##
+(To fill in later)
 
-In the project directory, you can run:
+## User Stories - MVP ##
+ - User is able to input their name
+ - User is able to select an answer from the multiple choice and determine if it was right or wrong
+ - User is able to determine his/her score at the end of the game
+ - User is able to restart the game at their leisure 
 
-### `npm start`
+ ## User Stories - Stretch ##
+ - User is able to input their name and pick a character that best suits them
+ - User is able to see a live clock countdown at the top of the screen
+ - User is able to see their score as they complete the game
+ - Users are able to see what their total time is, for completing the game
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ ## List of Technologies ##
+ - Javascript
+ - HTML5
+ - CSS3
+ - ReactJS
+ - (Potentially more?)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ ## Installation Instructions ##
+(To be filled in later)
 
-### `npm test`
+## Contribution Guidelines ##
+(To be filled in later)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## WIREFRAMES ##
 
-### `npm run build`
+### Landing Page ### 
+![Screen Shot 2020-10-29 at 12 04 33 PM](https://user-images.githubusercontent.com/67292452/97600530-884bc300-19df-11eb-90b3-6c99a6bc16d4.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Trivia Page ###
+![Screen Shot 2020-10-29 at 12 24 22 PM](https://user-images.githubusercontent.com/67292452/97602458-b16d5300-19e1-11eb-82d4-f204ba27133b.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for itz.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Scoreboard Page ###
+![Screen Shot 2020-10-29 at 12 32 45 PM](https://user-images.githubusercontent.com/67292452/97603470-dd3d0880-19e2-11eb-98c6-2684ed033f08.png)
