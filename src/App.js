@@ -21,22 +21,22 @@ class App extends Component {
 
 	render() {
 		return (
-		<div >
-		<header>
-			<Header />
-			{/* Input button for Modal */}
-			<input 
-			type="button"
-			onClick= {this.showModal}
-			value=" Show Modal" />
+			<div>
+				<header>
+					<Header />
+					{/* Input button for Modal */}
+					<input
+						className='open-modal-btn'
+						type='button'
+						onClick={this.showModal}
+						value=' Show Modal'
+					/>
 
-			<Modal 
-			show= {this.state.show}
-			onClose = {this.showModal}>
-				This message is from Modal
-				</Modal>
-		</header>
-      <Home />
+					<Modal show={this.state.show} onClose={this.showModal}>
+						This message is from Modal
+					</Modal>
+				</header>
+				<Home />
 			</div>
 		);
 	}
