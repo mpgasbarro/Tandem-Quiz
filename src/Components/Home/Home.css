@@ -1,0 +1,31 @@
+.Allboxes {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding-top: 400px;
+}
+.boxOne {
+	width: 300px;
+	border: 7px solid green;
+	padding: 50px;
+	margin: 20px;
+}
+.boxTwo {
+	width: 300px;
+	border: 7px solid rgb(9, 6, 173);
+	padding: 50px;
+	margin: 20px;
+}
+.boxThree {
+	width: 300px;
+	border: 7px solid rgb(158, 12, 12);
+	padding: 50px;
+	margin: 20px;
+}
+
+.boxFour {
+	width: 300px;
+	border: 7px solid rgb(12, 218, 233);
+	padding: 50px;
+	margin: 20px;
+}
