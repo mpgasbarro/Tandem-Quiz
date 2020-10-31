@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Switch, Route, Link } from 'react-router-dom';
 import Home from "./Components/Home/Home"
 import Header from "./Components/Header/Header"
 import Modal from "./Components/Modal/Modal"
+import Quiz from "./Components/Quiz/Quiz"
 import './App.css';
 
 class App extends Component {
@@ -19,25 +20,35 @@ class App extends Component {
 		this.setState({ show: !this.state.show })
 	}
 
+
 	render() {
 		return (
-			<div>
-				<header>
-					<Header />
-					{/* Input button for Modal */}
-					<input
-						className='open-modal-btn'
-						type='button'
-						onClick={this.showModal}
-						value=' Show Modal'
-					/>
+				<div>
+					<header>
+						<Header />
+						{/* Input button for Modal */}
+						<input
+							className='open-modal-btn'
+							type='button'
+							onClick={this.showModal}
+							value=' Show Modal'
+						/>
 
-					<Modal show={this.state.show} onClose={this.showModal}>
-						This message is from Modal
-					</Modal>
-				</header>
-				<Home />
-			</div>
+						<Modal show={this.state.show} onClose={this.showModal}>
+							This message is from Modal
+						</Modal>
+					</header>
+					<Home />
+
+					<div>
+						<Switch>
+							<Route exact path='/quiz'>
+								<Quiz />
+							</Route>
+						</Switch>
+					</div>
+				</div>
+
 		);
 	}
 }
