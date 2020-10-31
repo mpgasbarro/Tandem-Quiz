@@ -3,11 +3,9 @@ import React, { Component } from 'react';
 
 class Quiz extends Component {
     render() {
-        return (
-					<div>
-						Hello
-					</div>
-				);
+        return <div>
+            {this.props.location.state.username}
+            </div>;
     }
 }
 
