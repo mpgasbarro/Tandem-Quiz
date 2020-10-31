@@ -37,7 +37,12 @@ class App extends Component {
 				<div>
 					<Switch>
 						<Route exact path='/' component={Home} />
-						<Route exact path='/quiz' component={Quiz} />
+						<Route
+							path='/quiz'
+							render={(props) => (
+								<Quiz {...props} questions={this.state.questions} />
+							)}
+						/>
 					</Switch>
 				</div>
 			</div>
