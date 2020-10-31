@@ -26,28 +26,51 @@ class Home extends Component {
 						/>
 					</form>
 					<div className='Allboxes'>
-						<div className='boxOne'>
-							<b> Name: </b> {this.state.username} <br />
-							<b> From: </b> Boston, MA <br />
-							<b> Interests: </b>Long walks on the beach, Golden Girls <br />
-						</div>
-						<div className='boxTwo'>
-							<b> Name: </b> {this.state.username} <br />
-							<b> From: </b> Dallas, TX <br />
-							<b> Interests: </b>Opera, Dank Memes <br />
-						</div>
-						<div className='boxThree'>
-							<b> Name: </b> {this.state.username} <br />
-							<b> From: </b> Long Beach, CA <br />
-							<b> Interests: </b>Shredding the Gnar, playing with yoyo's <br />
-						</div>
-							<Link to='/quiz'>
-								<div className='boxFour'>
-									<b> Name: </b> {this.state.username} <br />
-									<b> From: </b> Chicago, IL <br />
-									<b> Interests: </b>Pokemon, More Pokemon, Daisies <br />
-								</div>
-							</Link>
+						<Link
+							to={{
+								pathname: '/quiz',
+								state: { username: this.state.username },
+							}}>
+							<div className='boxOne'>
+								<b> Name: </b> {this.state.username} <br />
+								<b> From: </b> Boston, MA <br />
+								<b> Interests: </b>Long walks on the beach, Golden Girls <br />
+							</div>
+						</Link>
+						<Link
+							to={{
+								pathname: '/quiz',
+								state: { username: this.state.username },
+							}}>
+							<div className='boxTwo'>
+								<b> Name: </b> {this.state.username} <br />
+								<b> From: </b> Dallas, TX <br />
+								<b> Interests: </b>Opera, Dank Memes <br />
+							</div>
+						</Link>
+						<Link
+							to={{
+								pathname: '/quiz',
+								state: { username: this.state.username },
+							}}>
+							<div className='boxThree'>
+								<b> Name: </b> {this.state.username} <br />
+								<b> From: </b> Long Beach, CA <br />
+								<b> Interests: </b>Shredding the Gnar, playing with yoyo's{' '}
+								<br />
+							</div>
+						</Link>
+						<Link
+							to={{
+								pathname: '/quiz',
+								state: { username: this.state.username },
+							}}>
+							<div className='boxFour'>
+								<b> Name: </b> {this.state.username} <br />
+								<b> From: </b> Chicago, IL <br />
+								<b> Interests: </b>Pokemon, More Pokemon, Daisies <br />
+							</div>
+						</Link>
 					</div>
 				</div>
 			</main>
