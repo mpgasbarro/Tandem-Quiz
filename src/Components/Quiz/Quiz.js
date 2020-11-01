@@ -7,6 +7,7 @@ let correctAns = '';
 let allAns = '';
 let indexArr = 0;
 let clickAns = '';
+let score = 0;
 
 class Quiz extends Component {
 	answerQ = (event) => {
@@ -16,12 +17,21 @@ class Quiz extends Component {
 	nextQuestionClick = () => {
 		if (clickAns === this.props.questions[indexArr].correct) {
 			indexArr++;
+			score++;
 			this.forceUpdate();
+		} else {
+			indexArr++;
+			this.forceUpdate();
+			return alert(
+				'Swing and a miss ' +
+					this.props.location.state.username +
+					". I don't want to make you feel bad but Bob in accounting didn't get it wrong because he knew the answer was...." +
+					this.props.questions[indexArr - 1].correct
+			);
 		}
 	};
 
 	render() {
-		console.log(this.props.questions[0].correct);
 		let questionInfo = this.props.questions.map((question, index) => {
 			return <h1 key={index}>{question.question}</h1>;
 		});
@@ -45,6 +55,7 @@ class Quiz extends Component {
 
 		return (
 			<div>
+				<header> Score: {score} </header>
 				{this.props.location.state.username}
 				<h1> {questionInfo[indexArr]} </h1>
 				<h3> {answerInfo[indexArr]} </h3>
